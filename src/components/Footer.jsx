@@ -1,91 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/components/footer.css";
+import React from 'react';
 
-
-const Footer = () => {
+function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto px-4">
-        {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold text-center md:text-left">
-            Hackathon 2024
-          </h2>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link
-              to="/"
-              className="hover:text-blue-400 transition-colors duration-200"
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="hover:text-blue-400 transition-colors duration-200"
-            >
-              About
-            </Link>
-            <Link
-              to="/schedule"
-              className="hover:text-blue-400 transition-colors duration-200"
-            >
-              Schedule
-            </Link>
-            <Link
-              to="/contact"
-              className="hover:text-blue-400 transition-colors duration-200"
-            >
-              Contact
-            </Link>
-          </div>
+    <footer className="footer bg-blue-600 text-white py-8">
+      <div className="container mx-auto text-center">
+        <div className="mb-6">
+          <h3 className="text-2xl font-semibold">DevSummit</h3>
+          <p className="text-sm">The ultimate hackathon event to bring together innovators and creators.</p>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-700 my-4"></div>
+        <div className="flex justify-center space-x-8 mb-6">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+            <i className="fab fa-facebook-f text-xl"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+            <i className="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+            <i className="fab fa-linkedin-in text-xl"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300">
+            <i className="fab fa-instagram text-xl"></i>
+          </a>
+        </div>
 
-        {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400 text-center md:text-left">
-            © {new Date().getFullYear()} Hackathon 2024. All Rights Reserved.
-          </p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition-colors duration-200"
-            >
-              <i className="fab fa-facebook"></i> Facebook
-            </a>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition-colors duration-200"
-            >
-              <i className="fab fa-twitter"></i> Twitter
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition-colors duration-200"
-            >
-              <i className="fab fa-instagram"></i> Instagram
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition-colors duration-200"
-            >
-              <i className="fab fa-linkedin"></i> LinkedIn
-            </a>
-          </div>
+        <div className="text-sm mb-6">
+          <a href="/terms" className="text-white hover:text-blue-300">Terms & Conditions</a> | 
+          <a href="/privacy" className="text-white hover:text-blue-300"> Privacy Policy</a>
+        </div>
+
+        <div className="text-sm">
+          <p>&copy; {new Date().getFullYear()} DevSummit. All rights reserved.</p>
         </div>
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;

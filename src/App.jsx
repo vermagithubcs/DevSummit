@@ -1,45 +1,61 @@
-import React, { Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Schedule from "./pages/Schedule";
-import Sponsors from "./pages/Sponsors";
-import Team from "./pages/Team";
-import FAQ from "./pages/FAQ";
-import Contact from "./pages/Contact";
-import Form from "./components/Form"; // Import Form component
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';  // Import BrowserRouter for routing
+import Header from './components/Header';
+import HackathonThemes from './components/HackathonThemes';
+import HackathonPrizes from './components/HackathonPrizes';
+import Timeline from './components/Timeline';
+import Sponsors from './components/Sponsors';
+import CommunityPartnership from './components/CommunityPartnership';
+import Mentors from './components/Mentor';
+import Team from './components/Team';
+import FAQ from './components/FAQ';
+import ContactUs from './components/ContactUs';
+import Map from './components/Map';
+import Footer from './components/Footer';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        {/* Navbar at the top */}
-        <Navbar />
+    <Router>  {/* Wrap the entire app in BrowserRouter */}
+      <div className="App">
+        {/* Header Section */}
+        <Header />
 
-        {/* Main content */}
-        <main className="flex-grow">
-          <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/schedule" element={<Schedule />} />
-              <Route path="/sponsors" element={<Sponsors />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </Suspense>
-        </main>
+        {/* About Us Section */}
+        <AboutUs />
 
-        {/* Footer at the bottom */}
+        {/* Hackathon Themes Section */}
+        <HackathonThemes />
+
+        {/* Hackathon Prizes Section */}
+        <HackathonPrizes />
+
+        {/* Hackathon Timeline Section */}
+        <Timeline />
+
+        {/* Sponsors Section */}
+        <Sponsors />
+
+        {/* Community Partnership Section */}
+        <CommunityPartnership />
+
+        {/* Meet the Mentors Section */}
+        <Mentors />
+
+        {/* Meet the Team Section */}
+        <Team />
+
+        {/* FAQ Section */}
+        <FAQ />
+
+        {/* Contact Us Section */}
+        <ContactUs />
+
+        {/* Map Section */}
+        <Map />
+
+        {/* Footer Section */}
         <Footer />
-
-        {/* Hackathon Registration Form */}
-        <div className="mt-10 bg-gray-100 py-6">
-          <Form />
-        </div>
       </div>
     </Router>
   );
