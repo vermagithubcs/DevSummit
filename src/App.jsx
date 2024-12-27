@@ -13,7 +13,6 @@ import ContactUs from './components/ContactUs';
 import Map from './components/Map';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
-
 function App() {
   return (
     <Router>  {/* Wrap the entire app in BrowserRouter */}
