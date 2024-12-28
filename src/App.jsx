@@ -13,6 +13,7 @@ import ContactUs from './components/ContactUs';
 import Map from './components/Map';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
+import Prizes from './components/Prizes';
 function App() {
   return (
     <Router>  {/* Wrap the entire app in BrowserRouter */}
@@ -20,6 +21,9 @@ function App() {
         {/* Header Section */}
         <Header />
 
+        {/* Prizes Section */}
+        <Prizes />
+        
         {/* About Us Section */}
         <AboutUs />
 
