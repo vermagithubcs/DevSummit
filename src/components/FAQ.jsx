@@ -33,7 +33,7 @@ function FAQ() {
   return (
     <section className="faq py-12 bg-gray-50">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6 text-blue-600">Frequently Asked Questions</h2>
+        <h2 className="text-4xl font-bold mb-6 text-[#A7FF40]">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
           {faqData.map((faq, index) => (
             <div key={index} className="mb-4">

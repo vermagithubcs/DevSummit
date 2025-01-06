@@ -30,7 +30,7 @@ function ContactUs() {
   return (
     <section className="contact-us py-12 bg-gray-50">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6 text-blue-600">Contact Us</h2>
+        <h2 className="text-4xl font-bold mb-6 text-[#A7FF40]">Contact Us</h2>
         <p className="text-lg mb-8 text-gray-700">
           Have any questions or want more information? Reach out to us, and we’ll get back to you as soon as possible!
         </p>

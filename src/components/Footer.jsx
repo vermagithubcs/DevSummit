@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="footer bg-blue-600 text-white py-8">
+    <footer className="footer bg-[#A7FF40] text-black py-8">
       <div className="container mx-auto text-center">
         <div className="mb-6">
           <h3 className="text-2xl font-semibold">DevSummit</h3>
@@ -25,8 +25,8 @@ function Footer() {
         </div>
 
         <div className="text-sm mb-6">
-          <a href="/terms" className="text-white hover:text-blue-300">Terms & Conditions</a> | 
-          <a href="/privacy" className="text-white hover:text-blue-300"> Privacy Policy</a>
+          <a href="/terms" className="text-black hover:text-blue-300">Terms & Conditions</a> | 
+          <a href="/privacy" className="text-black hover:text-blue-300"> Privacy Policy</a>
         </div>
 
         <div className="text-sm">

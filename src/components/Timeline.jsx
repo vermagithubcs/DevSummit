@@ -32,14 +32,14 @@ function Timeline() {
   return (
     <section className="timeline py-12 bg-gray-50">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6 text-blue-600">Hackathon Timeline</h2>
+        <h2 className="text-4xl font-bold mb-6 text-[#A7FF40]">Hackathon Timeline</h2>
         <p className="text-lg mb-8 text-gray-700">
           Stay on track with our DevSummit hackathon timeline. Mark these important dates and get ready for an unforgettable experience!
         </p>
         <div className="space-y-8">
           {events.map((event, index) => (
-            <div key={index} className="event bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
-              <h3 className="text-2xl font-semibold text-blue-600 mb-2">{event.title}</h3>
+            <div key={index} className="event bg-[#A7FF40] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+              <h3 className="text-2xl font-semibold text-black mb-2">{event.title}</h3>
               <p className="text-lg text-gray-800 mb-2">{event.date}</p>
               <p className="text-gray-600">{event.description}</p>
             </div>

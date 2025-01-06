@@ -9,6 +9,8 @@ const PrizeCard = () => {
         viewBox="0 0 353 372"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Prize Card with cash prize details"
       >
         <path
           d="M149.847 0H22.6273C10.1306 0 0 10.1305 0 22.6272V349.214C0 361.711 10.1306 371.841 22.6273 371.841H330.358C342.855 371.841 352.985 361.711 352.985 349.214V120.679V118.098C352.985 111.192 347.387 105.594 340.481 105.594H267.804C261.52 105.594 255.519 102.981 251.239 98.3801L166.413 7.21381C162.132 2.61324 156.131 0 149.847 0Z"
@@ -33,9 +35,7 @@ const PrizeCard = () => {
           x="30"
           y="60"
           fill="#000"
-          fontSize="32"
-          fontWeight="bold"
-          fontFamily="Arial, sans-serif"
+          className="text-2xl font-bold"
         >
           ₹10K
         </text>
@@ -43,8 +43,7 @@ const PrizeCard = () => {
           x="30"
           y="90"
           fill="#000"
-          fontSize="20"
-          fontFamily="Arial, sans-serif"
+          className="text-lg"
         >
           Cash Prize
         </text>
@@ -52,9 +51,7 @@ const PrizeCard = () => {
           x="30"
           y="140"
           fill="#000"
-          fontSize="18"
-          fontWeight="bold"
-          fontFamily="Arial, sans-serif"
+          className="text-xl font-bold"
         >
           3rd Prize
         </text>
@@ -62,27 +59,23 @@ const PrizeCard = () => {
           x="30"
           y="180"
           fill="#000"
-          fontSize="14"
-          fontFamily="Arial, sans-serif"
-          className="text-[16px]"
+          className="text-base"
         >
-            Presented to the team finishing third for
+          Presented to the team finishing third for
         </text>
         <text
           x="30"
           y="200"
           fill="#000"
-          fontSize="14"
-          fontFamily="Arial, sans-serif"
-          className="text-[16px]"
+          className="text-base"
         >
-            their creative and well-executed project.
+          their creative and well-executed project.
         </text>
       </svg>
 
       {/* Button */}
       <div
-        className="absolute top-[15rem] left-[40px] bg-black text-white text-center rounded-lg cursor-pointer w-[120px] h-[40px] flex items-center justify-center"
+        className="absolute top-[15rem] left-[40px] bg-black text-white text-center rounded-lg cursor-pointer w-[120px] h-[40px] flex items-center justify-center hover:bg-gray-800 transition-colors"
         onClick={() => alert("View Details Clicked")}
       >
         view details →
