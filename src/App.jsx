@@ -21,12 +21,12 @@ function App() {
         {/* Header Section */}
         <Header />
 
-        {/* Prizes Section */}
-        <Prizes />
-        
         {/* About Us Section */}
         <AboutUs />
 
+        {/* Prizes Section */}
+        <Prizes />
+        
         {/* Hackathon Themes Section */}
         <HackathonThemes />
 

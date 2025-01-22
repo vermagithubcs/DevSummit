@@ -43,7 +43,7 @@ const Navbar = () => {
             isOpen ? "top-14 left-0 p-4" : "hidden md:block"
           }`}
         >
-          {["Home", "About", "Schedule", "Sponsors", "Team", "Faq", "Contact Us"].map((item, index) => (
+          {["Home", "About","Prizes","Mentors", "Schedule", "Sponsors", "Team", "Faq", "Contact Us"].map((item, index) => (
             <Link
               key={index}
               to={`/${item.toLowerCase().replace(/\s/g, "")}`}
