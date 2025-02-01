@@ -7,7 +7,7 @@ import Mouse from '../svg/mouse.svg'
 import Summit from '../assets/bgDevSummit.png'
 function Header() {
   return (
-      <header className="header lg:h-[115vh] h-[90vh] text-white py-8 rounded-b-[10rem]" style={{backgroundImage: `url(${Summit})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <header className="header lg:h-[115vh] h-[90vh] text-white py-8" style={{backgroundImage: `url(${Summit})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <Navbar />
         <div>
           <img className='h-[600px] absolute top-0 left-[15%]' src={Ellipse} alt='Ellipse'/>

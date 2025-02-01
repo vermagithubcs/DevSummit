@@ -1,59 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react'
 
-function FAQ() {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const toggleAnswer = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
-  const faqData = [
+const FAQ = () => {
+  const faqs = [
     {
-      question: "What is DevSummit?",
-      answer: "DevSummit is a premier hackathon event bringing together developers, designers, and innovators from around the world to collaborate and solve real-world problems."
+      question: "What is the eligibility criteria to participate in the hackathon?",
+      answer: "Anyone who is interested in coding and innovation can participate."
     },
     {
-      question: "How can I apply for DevSummit?",
-      answer: "You can apply through the 'Apply' button on the homepage. Simply fill out the registration form, and you'll receive a confirmation email after successful submission."
+      question: "What is the eligibility criteria to participate in the hackathon?",
+      answer: "Anyone who is interested in coding and innovation can participate."
     },
     {
-      question: "Is there any registration fee?",
-      answer: "No, the registration for DevSummit is completely free! We aim to make this opportunity accessible to everyone."
+      question: "What is the eligibility criteria to participate in the hackathon?",
+      answer: "Anyone who is interested in coding and innovation can participate."
     },
     {
-      question: "What kind of projects can I work on during the hackathon?",
-      answer: "You can work on a variety of projects, including web development, mobile apps, AI/ML projects, IoT, and more. The event is open to all kinds of innovations!"
-    },
-    {
-      question: "Can teams participate?",
-      answer: "Yes, teams can participate! Teams should have a maximum of 4 members. You can either form your own team or join one during the event."
-    },
-  ];
-
+      question: "What is the eligibility criteria to participate in the hackathon?",
+      answer: "Anyone who is interested in coding and innovation can participate."
+    }
+  ]
   return (
-    <section className="faq py-12 bg-gray-50">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6 text-[#A7FF40]">Frequently Asked Questions</h2>
-        <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-          {faqData.map((faq, index) => (
-            <div key={index} className="mb-4">
-              <div
-                className="cursor-pointer text-lg font-semibold text-left text-gray-800"
-                onClick={() => toggleAnswer(index)}
-              >
-                {faq.question}
-              </div>
-              {activeIndex === index && (
-                <div className="text-gray-600 text-base mt-2 text-left">
-                  {faq.answer}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+    <>
+    <div className='h-80 w-full items-start justify-around flex bg-white text-black'>
+      <div className="faq relative top-8">
+        <h1 className='text-3xl'>Frequently <br /> Asked Questions</h1>
+        <p className='font-sans bg-[#EDEDED] inline-block px-3 py-2 rounded-md relative top-4'>Question List</p>
       </div>
-    </section>
-  );
+      <div className="qa relative top-3">
+        {faqs.map((faq,index)=>(
+          <div className='m-6 text-xl' key={index}>
+            {faq.question}
+          </div>
+        ))}
+      </div>
+    </div>
+    </>
+  )
 }
 
-export default FAQ;
+export default FAQ

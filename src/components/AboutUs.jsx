@@ -5,7 +5,7 @@ import JagannathLogo from '../assets/Jagannath logo.png'
 import DevSummit from '../assets/Devsummit.png';
 function AboutUs() {
   return (
-    <section className="about-us py-12 relative h-[150vh] top-16" style={{ backgroundImage: `url(${Summit})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className="about-us py-12 relative h-[150vh]" style={{ backgroundImage: `url(${Summit})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8  text-center">
         <div className='DevSummit h-[80vh] w-[60vw] relative top-[10rem] right-20 px-0 py-0'>
           <h2 className="sm:text-[4xl] font-bold mb-6 text-white">DevSummit 2025</h2>
