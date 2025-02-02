@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* Links */}
         <div
-          className={`md:flex md:space-x-6 absolute md:static w-full md:w-auto bg-[#363636] md:bg-transparent transition-all duration-300 ${
+          className={`md:flex md:space-x-6 absolute md:static w-full md:w-auto bg-[#363636] md:bg-transparent text-white items-center text-nowrap transition-all duration-300 ${
             isOpen ? "top-14 left-0 p-4" : "hidden md:block"
           }`}
         >
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         {/* Register Btn */}
         <button
-          className="h-[54px] w-[165px] bg-[#00FF00] rounded-3xl text-black hover:bg-green-400 transition-all duration-300"
+          className="h-[45px] w-[165px] bg-[#00FF00] rounded-3xl text-black hover:bg-green-400 transition-all duration-300"
         >
           Register Now
         </button>

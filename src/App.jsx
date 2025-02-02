@@ -45,6 +45,9 @@ function App() {
 
         {/* FAQ Section */}
         <FAQ />
+
+        {/* Footer Section  */}
+        <Footer />
       </div>
     </Router>
   );
